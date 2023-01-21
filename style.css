@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    background: #D6BCFF;
+    font-family: 'DM Sans';
+    font-style: normal;
+}
+
+.top-heading {
+
+    margin-top: 132px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: 0.625em;
+    color: #6F3CFF;
+
+}
+
+#middle-box {
+    width: 818px;
+    display: flex;
+    justify-content: space-a;
+    background: #FFFFFF;
+    box-shadow: -1px 6px 55px rgba(0, 0, 0, 0.16);
+    border-radius: 21px;
+    height: 428px;
+    margin: 64px auto;
+}
+
+.left-box {
+    margin-left: 44px;
+    margin-top: 44px;
+}
+
+#first-input {
+    background: rgba(182, 172, 196, 0.53);
+    border-radius: 3px;
+    border: none;
+    width: 337px;
+    height: 43px;
+}
+
+.left-box p {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+
+    color: #9C60FF;
+
+
+}
+
+.left-box-third-p {
+    margin-top: 47px;
+}
+
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+#tip1,#tip2,#tip3,#tip4,#tip5,#tip6 {
+    padding: 0;
+    text-align: center;
+    background: #9C60FF;
+    border-radius: 4px;
+    width: 106px;
+    height: 44px;
+    font-family: 'Monospaceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #E9DBFF;
+    border-style: none;
+
+}
+
+.left-box-third {
+    display: flex;
+}
+
+.left-box-third-div1 {
+    background: rgba(182, 172, 196, 0.53);
+    border-radius: 3px;
+    width: 220px;
+    height: 43px;
+}
+
+.left-box-third-div2 {
+    display: flex;
+    width: 117px;
+    background: #FFFFFF;
+}
+
+
+
+.right-box {
+    /* text-align: left; */
+    width: 367px;
+    height: 370px;
+    margin: 28px 26px 0 0;
+    background: #9C60FF;
+    border-radius: 11px;
+}
+
+.right-box-1 {
+    margin-top: 46px;
+    color: #F3E4FF;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Inconsolata';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+
+}
+
+.right-box-person {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.045em;
+    margin: 0;
+
+    color: #C39FFF;
+}
+
+.right-box-price {
+
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+
+    color: #C39FFF;
+}
+
+.right-box-price p {
+    margin: 0;
+}
+
+.right-box-2 {
+    color: #F3E4FF;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Inconsolata';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+}
+
+.reset-btn {
+    width: 295px;
+    height: 43px;
+    border: none;
+    background-color: #C39FFF;
+    border-radius: 5px;
+    margin: 123px 31px 0 41px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #9C60FF;
+    letter-spacing: 0.19em;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-heading">
+        <p>BILL </p>
+        <p>SPILL</p>
+    </div>
+    <div id="middle-box">
+
+        <!-- Left Box Start Here -->
+        <div class="left-box">
+
+            <p>Bill</p>
+            <input type="text" name="" id="first-input">
+
+            <p>Select Tip %</p>
+            <div class="left-inside-div">
+                <ul>
+                    <button type="button" id="tip1" onclick='myFun(this)'>5%</button>
+                    <button type="button" id="tip2" onclick=myFun(this)>10%</button>
+                    <button type="button" id="tip3" onclick=myFun()>15%</button>
+                    <button type="button" id="tip4" onclick=myFun()>25%</button>
+                    <button type="button" id="tip5" onclick=myFun()>50%</button>
+                    <button type="button" id="tip6" onclick=myFun()>75%</button>
+                </ul>
+            </div>
+
+            <p class="left-box-third-p">Number of People</p>
+            <div class="left-box-third">
+                <div class="left-box-third-div1"></div>
+                <div class="left-box-third-div2">
+                    <button class="plus" onclick=addOne()>+</button>
+                    <p class="btn-midnum">0</p>
+                    <button class="minus" onclick=subOne()>-</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Right Box Start Here -->
+        <div class="right-box">
+            <div class="right-box-1">
+
+                <div>
+                    <p>Tip Amount</p>
+                    <p class="right-box-person">/ person</p>
+                </div>
+                <div class="right-box-price">
+                    <p id="price-tag1">₹0.00</p>
+                </div>
+            </div>
+
+            <div class="right-box-2">
+                <div>
+                    <p>Total</p>
+                    <p class="right-box-person">/ person</p>
+                </div>
+                <div class="right-box-price">
+                    <p id="price-tag2">₹0.00</p>
+                </div>
+            </div>
+
+            <!-- <button class="reset-btn">Reset</button> -->
+            <button type="button" onclick=myFunction() class="reset-btn">Generate</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
