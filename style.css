@@ -6,7 +6,6 @@ body {
 }
 
 .top-heading {
-
     margin-top: 132px;
     text-align: center;
     font-weight: 700;
@@ -16,7 +15,7 @@ body {
     color: #6F3CFF;
 
 }
-
+.top-heading p{margin-top: 0;margin-bottom: 0;}
 #middle-box {
     width: 818px;
     display: flex;
@@ -69,7 +68,12 @@ ul {
 
 }
 
-#tip1,#tip2,#tip3,#tip4,#tip5,#tip6 {
+#tip1,
+#tip2,
+#tip3,
+#tip4,
+#tip5,
+#tip6 {
     padding: 0;
     text-align: center;
     background: #9C60FF;
@@ -107,7 +111,6 @@ ul {
 
 
 .right-box {
-    /* text-align: left; */
     width: 367px;
     height: 370px;
     margin: 28px 26px 0 0;
@@ -116,55 +119,45 @@ ul {
 }
 
 .right-box-1 {
-    margin-top: 46px;
-    color: #F3E4FF;
     display: flex;
     justify-content: space-around;
     font-family: 'Inconsolata';
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0.045em;
-
+    font-style: normal;
 }
 
-.right-box-person {
+.right-box-2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
     font-family: 'Inconsolata';
     font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 14px;
-    letter-spacing: 0.045em;
-    margin: 0;
-
-    color: #C39FFF;
 }
 
-.right-box-price {
+#price-tag1,
+#price-tag2 {
 
-    font-family: 'Inconsolata';
-    font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 42px;
     letter-spacing: 0.01em;
-
     color: #C39FFF;
 }
 
-.right-box-price p {
-    margin: 0;
-}
+#price-tag1 {margin: 36px 0 0 0;}
+#price-tag2 {margin: 23px 0 0 0;}
 
-.right-box-2 {
+.tip-col1, .tip-col2 {
     color: #F3E4FF;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Inconsolata';
-    font-size: 16px;
+}
+.tip-col1{margin: 46px 0 0 0}
+.tip-col2{margin: 25px 0 0 0 ;}
+.right-box-person {
+    margin-top: 5px;
     font-weight: 600;
-    line-height: 17px;
+    font-size: 13px;
+    line-height: 14px;
     letter-spacing: 0.045em;
+    color: #C39FFF;
 }
 
 .reset-btn {

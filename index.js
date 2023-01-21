@@ -17,27 +17,33 @@
 //             return false;
 //     }
 // }
-
-var btn = document.querySelector('#tip1')
-btn.addEventListener('click', function onclick() {
-    btn.style.backgroundColor = "#6138a4";
-})
-var btn = document.querySelector('#tip2')
-btn.addEventListener('click', function onclick() {
-    btn.style.backgroundColor = "#6138a4";
-})
-var btn = document.querySelector('#tip3')
-btn.addEventListener('click', function onclick() {
-    btn.style.backgroundColor = "#6138a4";
-})
-var btn = document.querySelector('#tip4')
-btn.addEventListener('click', function onclick() {
-    btn.style.backgroundColor = "#6138a4";
-})
-var btn = document.querySelector('#tip5')
-btn.addEventListener('click', function onclick() {
-    btn.style.backgroundColor = "#6138a4";
-})
+function onClicked() {
+    var btn = document.querySelector('.tipclass')
+    btn.addEventListener('click', function onclick() {
+        btn.style.backgroundColor = "#6138a4";
+    })
+    // console.log(btn)
+}
+// var btn = document.querySelector('#tip1')
+// btn.addEventListener('click', function onclick() {
+//     btn.style.backgroundColor = "#6138a4";
+// })
+// var btn = document.querySelector('#tip2')
+// btn.addEventListener('click', function onclick() {
+//     btn.style.backgroundColor = "#6138a4";
+// })
+// var btn = document.querySelector('#tip3')
+// btn.addEventListener('click', function onclick() {
+//     btn.style.backgroundColor = "#6138a4";
+// })
+// var btn = document.querySelector('#tip4')
+// btn.addEventListener('click', function onclick() {
+//     btn.style.backgroundColor = "#6138a4";
+// })
+// var btn = document.querySelector('#tip5')
+// btn.addEventListener('click', function onclick() {
+//     btn.style.backgroundColor = "#6138a4";
+// })
 
 
 
@@ -46,28 +52,28 @@ function myFunction() {
 
     var y = document.getElementById("first-input").value
     document.getElementById("price-tag1").innerHTML = (5 / y) * 100
-    console.log('y')
+
     var x = document.getElementById("first-input").value;
-    document.getElementById("price-tag2").innerHTML = x+y;
-    console.log('x')
+    document.getElementById("price-tag2").innerHTML = x
+    
 }
 
 
 
 
 // Number of people btn
-var i = 0
-document.querySelector(".btn-midnum").innerHTML = i
+var numOfPeople = 0
+document.querySelector(".btn-midnum").innerHTML = numOfPeople
 
 function addOne() {
-    i++
-    document.querySelector(".btn-midnum").innerHTML = i;
+    numOfPeople++
+    document.querySelector(".btn-midnum").innerHTML = numOfPeople;
 }
 
 function subOne() {
-    if (i <= 0) {
+    if (numOfPeople <= 0) {
         return 0
     }
-    i--
-    document.querySelector(".btn-midnum").innerHTML = i
+    numOfPeople--
+    document.querySelector(".btn-midnum").innerHTML = numOfPeople
 }
