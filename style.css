@@ -15,7 +15,12 @@ body {
     color: #6F3CFF;
 
 }
-.top-heading p{margin-top: 0;margin-bottom: 0;}
+
+.top-heading p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #middle-box {
     width: 818px;
     display: flex;
@@ -32,12 +37,22 @@ body {
     margin-top: 44px;
 }
 
-#first-input {
+#first-input {font-size: 21px;
+    color: #9C60FF;
+    text-align: right;
+    padding-right: 10px;
     background: rgba(182, 172, 196, 0.53);
     border-radius: 3px;
     border: none;
     width: 337px;
     height: 43px;
+    text-size-adjust: 5px;
+    letter-spacing: 0.01em;
+}
+
+.rupee {
+    position: relative;
+    right: 330px;
 }
 
 .left-box p {
@@ -47,17 +62,12 @@ body {
     font-size: 15px;
     line-height: 16px;
     letter-spacing: 0.045em;
-
     color: #9C60FF;
-
-
 }
 
 .left-box-third-p {
     margin-top: 47px;
 }
-
-
 
 ul {
     display: flex;
@@ -65,7 +75,6 @@ ul {
     gap: 10px;
     list-style: none;
     padding-left: 0;
-
 }
 
 #tip1,
@@ -96,10 +105,10 @@ ul {
 }
 
 .left-box-third-div1 {
-    background: rgba(182, 172, 196, 0.53);
+    background: #b6acc487;
     border-radius: 3px;
     width: 220px;
-    height: 43px;
+    height: 44.5px;
 }
 
 .left-box-third-div2 {
@@ -143,14 +152,27 @@ ul {
     color: #C39FFF;
 }
 
-#price-tag1 {margin: 36px 0 0 0;}
-#price-tag2 {margin: 23px 0 0 0;}
+#price-tag1 {
+    margin: 36px 0 0 0;
+}
 
-.tip-col1, .tip-col2 {
+#price-tag2 {
+    margin: 23px 0 0 0;
+}
+
+.tip-col1,
+.tip-col2 {
     color: #F3E4FF;
 }
-.tip-col1{margin: 46px 0 0 0}
-.tip-col2{margin: 25px 0 0 0 ;}
+
+.tip-col1 {
+    margin: 46px 0 0 0
+}
+
+.tip-col2 {
+    margin: 25px 0 0 0;
+}
+
 .right-box-person {
     margin-top: 5px;
     font-weight: 600;
@@ -174,4 +196,54 @@ ul {
     line-height: 20px;
     color: #9C60FF;
     letter-spacing: 0.19em;
+}
+
+.color_back {
+    background-color: black;
+}
+
+.left-box-third-div2 {
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #8E8E8E;
+    border-radius: 3px;
+}
+
+.left-box-third-div2 p {
+    width: 50px;
+    margin-top: 13px;
+    text-align: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    font-family: 'Monospaceland';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+
+}
+
+.plus {
+    border: none;
+    
+    width: 33px;
+    font-family: 'Monospaceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
+
+}
+
+.minus {
+    border: none;
+    width: 34px;
+    font-family: 'Monospaceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #000000;
 }

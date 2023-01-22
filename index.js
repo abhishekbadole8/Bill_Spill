@@ -1,69 +1,33 @@
-
-
-// tip percent color
-// function myFun (button) {
-//     var x = button.id;
-//     switch (x) {
-//         case '1':
-//             myFun1(x);
-//             break;
-//         case '2':
-//             myFunction2(x);
-//             break;
-//         case '3':
-//             myFunction3(x);
-//             break;
-//         default:
-//             return false;
-//     }
-// }
-function onClicked() {
-    var btn = document.querySelector('.tipclass')
-    btn.addEventListener('click', function onclick() {
-        btn.style.backgroundColor = "#6138a4";
-    })
-    // console.log(btn)
-}
-// var btn = document.querySelector('#tip1')
-// btn.addEventListener('click', function onclick() {
-//     btn.style.backgroundColor = "#6138a4";
-// })
-// var btn = document.querySelector('#tip2')
-// btn.addEventListener('click', function onclick() {
-//     btn.style.backgroundColor = "#6138a4";
-// })
-// var btn = document.querySelector('#tip3')
-// btn.addEventListener('click', function onclick() {
-//     btn.style.backgroundColor = "#6138a4";
-// })
-// var btn = document.querySelector('#tip4')
-// btn.addEventListener('click', function onclick() {
-//     btn.style.backgroundColor = "#6138a4";
-// })
-// var btn = document.querySelector('#tip5')
-// btn.addEventListener('click', function onclick() {
-//     btn.style.backgroundColor = "#6138a4";
-// })
-
-
-
 // Generate btn work
+
+let outDiscount;
+let outPrice;
+let discount;
+var numOfPeople = 1
+
 function myFunction() {
-
-    var y = document.getElementById("first-input").value
-    document.getElementById("price-tag1").innerHTML = (5 / y) * 100
-
-    var x = document.getElementById("first-input").value;
-    document.getElementById("price-tag2").innerHTML = x
-    
+    document.querySelector(".btn-midnum").innerHTML = numOfPeople
+    document.getElementById("price-tag1").innerHTML = discount / numOfPeople;
+    document.getElementById("price-tag2").innerHTML = outPrice;
 }
 
-
-
-
-// Number of people btn
-var numOfPeople = 0
-document.querySelector(".btn-midnum").innerHTML = numOfPeople
+function func1(i, j) {
+    var btn = document.querySelector(`#tip${j}`)
+    for (let n = 1; n <= 6; n++) {
+        if (n === j) {
+            btn.style.backgroundColor = "hsl(263, 43%, 21%)";
+        } else {
+            var btn1 = document.querySelector(`#tip${n}`)
+            btn1.style.backgroundColor = "#9C60FF";
+        }
+    }
+    var y = document.getElementById("first-input").value
+    let newNum = Number(y);
+    discount = (i / newNum) * 100;
+    console.log(numOfPeople);
+    outDiscount = discount;
+    outPrice = (newNum + discount);
+}
 
 function addOne() {
     numOfPeople++
